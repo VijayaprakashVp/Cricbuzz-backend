@@ -15,9 +15,9 @@ const feedController = require("./controllers/feed.controller");
 // const PhotosController = require("./controllers/photos.controller");
 // const RankingController = require("./controllers/ranking.controller");
 
-app.get("/", function (req, res) {
-  return res.redirect("https://faballey-clone.vercel.app/");
-});
+// app.get("/", function (req, res) {
+//   return res.redirect("https://faballey-clone.vercel.app/");
+// });
 
 app.use("/feed", feedController);
 // app.use("/news", NewsController);
