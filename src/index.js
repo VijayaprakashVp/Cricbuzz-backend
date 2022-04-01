@@ -10,23 +10,19 @@ const newsController = require("./controllers/news.controller");
 const latestPhotoController = require("./controllers/latest_photos.controller");
 const feedController = require("./controllers/feed.controller");
 const miniFeedController = require("./controllers/minifeed.controller");
-// const ScheduleController = require("./controllers/schedule.controller");
-// const VideosController = require("./controllers/videos.controller");
-// const PhotosController = require("./controllers/photos.controller");
-// const RankingController = require("./controllers/ranking.controller");
-
-// app.get("/", function (req, res) {
-//   return res.redirect("https://faballey-clone.vercel.app/");
-// });
+const scheduleController = require("./controllers/schedule.controller");
+const videosController = require("./controllers/videos.controller");
+const photosController = require("./controllers/photos.controller");
+const rankingController = require("./controllers/ranking.controller");
 
 app.use("/feed", feedController);
 app.use("/news", newsController);
 app.use("/latestphoto", latestPhotoController);
 app.use("/minifeed", miniFeedController);
-// app.use("/schedule", ScheduleController);
-// app.use("/videos", VideosController);
-// app.use("/photos", PhotosController);
-// app.use("/ranking", RankingController);
+app.use("/schedule", scheduleController);
+app.use("/videos", videosController);
+app.use("/photos", photosController);
+app.use("/ranking", rankingController);
 // app.use("/player_rankings", RankingController);
 
 module.exports = app;
